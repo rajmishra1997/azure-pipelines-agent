@@ -1,0 +1,10 @@
+name: Branch Cleanup Preview
+
+on:
+  workflow_dispatch:
+    inputs:
+      months:
+        description: 'Delete branches older than N months (preview only)'
+        required: true
+        type: number
+        default: '24'
